@@ -1,47 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Novacraft - Download</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/x-icon" href="logo.png">
-</head>
-<body>
-  <nav class="navbar">
-    <ul>
-      <li class="logo-container">
-        <a href="#"><img src="logo.png" alt="NovaCraft Logo" class="logo"></a>
-        <a href="#" class="logo-text">NovaCraft</a>
-      </li>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="download.html">Download</a></li>
-      <li><a href="https://github.com/mastergive514/NovaCraft">GitHub</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section id="download" class="section download-section">
-      <h2 class="animate-left">Download Novacraft</h2>
-      <p class="animate-left">Select your preferred version:</p>
-      <div class="download-options animate-left">
-        <div class="download-option">
-          <h3>Windows</h3>
-          <a href="https://github.com/mastergive514/NovaCraft/releases/latest/download/ClassiCube-64.exe" download class="download-btn">Windows x64</a>
-          <a href="https://github.com/mastergive514/NovaCraft/releases/latest/download/ClassiCube-32.exe" download class="download-btn">Windows x32</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaCraft - Download</title>
+    <link rel="icon" type="image/x-icon" href="logo.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-zinc-900 text-white">
+    <!-- Navbar -->
+    <div class="bg-purple-600 p-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img
+          src="logo.png"
+          alt="NovaCraft Logo"
+          class="mr-2"
+          style="width: 30px; height: 30px"
+        />
+        <span class="text-2xl font-bold">NovaCraft</span>
+      </div>
+      <div class="space-x-4">
+        <a
+          href="index.html"
+          class="hover:underline"
+          >Home</a
+        >
+        <a
+          href="download.html"
+          class="hover:underline"
+          >Download</a
+        >
+        <a
+          href="https://github.com/mastergive514/NovaCraft"
+          class="hover:underline"
+          >GitHub</a
+        >
+        <a
+          href="mailto:aymanbouraaman@gmail.com"
+          class="hover:underline"
+          >Contact</a
+        >
+      </div>
+    </div>
+
+    <!-- Download Section -->
+    <div class="max-w-4xl mx-auto py-12 px-6">
+      <h2 class="text-3xl font-bold mb-4 text-center">Download NovaCraft</h2>
+      <p class="text-center text-gray-300 mb-8">
+        Select your preferred version for your operating system
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Windows -->
+        <div class="bg-zinc-800 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">Windows</h3>
+          <a
+            href="https://github.com/mastergive514/NovaCraft/releases/latest/download/ClassiCube-64.exe"
+            class="block bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded mb-2 text-center"
+            download
+            >Download Windows x64</a
+          >
+          <a
+            href="https://github.com/mastergive514/NovaCraft/releases/latest/download/ClassiCube-32.exe"
+            class="block bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded text-center"
+            download
+            >Download Windows x32</a
+          >
         </div>
-        <div class="download-option">
-          <h3>Linux</h3>
-          <a href="https://github.com/mastergive514/NovaCraft/releases/latest/download/ClassiCube-Linux-64" download class="download-btn">Linux x64</a>
-          <a href="https://github.com/mastergive514/NovaCraft/releases/latest/download/ClassiCube-Linux-32" download class="download-btn">Linux x32</a>
+
+        <!-- Linux -->
+        <div class="bg-zinc-800 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">Linux</h3>
+          <a
+            href="https://github.com/mastergive514/NovaCraft/releases/latest/download/ClassiCube-Linux-64"
+            class="block bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded mb-2 text-center"
+            download
+            >Download Linux x64</a
+          >
+          <a
+            href="https://github.com/mastergive514/NovaCraft/releases/latest/download/ClassiCube-Linux-32"
+            class="block bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded text-center"
+            download
+            >Download Linux x32</a
+          >
         </div>
-        <div class="download-option">
-          <h3>Mac</h3>
-          <a href="https://github.com/mastergive514/NovaCraft/releases/latest/download/ClassiCube-Mac-64" download class="download-btn">Mac x64</a>
+
+        <!-- Mac -->
+        <div class="bg-zinc-800 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">Mac</h3>
+          <a
+            href="https://github.com/mastergive514/NovaCraft/releases/latest/download/ClassiCube-Mac-64"
+            class="block bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded text-center"
+            download
+            >Download Mac x64</a
+          >
         </div>
       </div>
-    </section>
-  </main>
+    </div>
 
-  <script src="script.js"></script>
-</body>
+    <!-- Footer -->
+    <div class="bg-zinc-700 p-4">
+      <p class="text-center text-black text-2xl font-bold">
+        Thank you for using this plugin
+      </p>
+      <div class="bg-purple-600 p-4 rounded text-center mt-2">
+        <p>MasterGive514 © 2025</p>
+      </div>
+    </div>
+  </body>
 </html>
